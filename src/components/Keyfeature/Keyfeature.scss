@@ -1,0 +1,95 @@
+.section-container {
+    background-color: var(--dark);
+
+    .section-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        color: #FFF;
+
+        .title {
+            font-size: 46px;
+            font-weight: 700;
+        }
+    }
+}
+
+.card-feature {
+    color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all ease-in-out .3s;
+    margin-bottom: 30px;
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #FFF;
+            color: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 22px;
+        }
+
+        .title-header {
+            flex: 1;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    .card-body {
+        p {
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+
+    .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+
+        .btn-app {
+            height: 35px;
+            padding: 0 10px;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: var(--primary);
+                color: #FFF;
+            }
+        }
+
+        .link-more {
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &:hover {
+        // background-color: rgba(56, 56, 56, 0.521);
+        background: rgb(247, 207, 238);
+        background: linear-gradient(0deg, rgba(152, 152, 152, 0.269) 0%, rgba(0, 0, 0, 0.96) 100%);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    }
+}

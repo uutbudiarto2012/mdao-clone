@@ -1,0 +1,133 @@
+.hero-container {
+    background-image: url('../../assets/hero-bg.png');
+    height: calc(100vh - 90px);
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    display: flex;
+
+
+
+    .left {
+        flex: 1;
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .text-version {
+            font-size: 256px;
+            font-weight: 700;
+            text-shadow: 3px 3px 9px rgba(237, 27, 108, 0.41), 0px -5px 9px rgba(237, 27, 108, 0.41), 0px -12px 9px rgba(237, 27, 108, 0.46), 0px 11px 9px rgba(237, 27, 108, 0.46);
+        }
+    }
+
+    .right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        flex-direction: column;
+
+        .swipper {
+            width: 100%;
+
+            .item {
+                text-align: center;
+
+                h2 {
+                    font-size: 46px;
+                    font-weight: 700;
+
+                    span {
+                        color: var(--primary);
+                    }
+                }
+
+                h3 {
+                    font-size: 50px;
+                    font-weight: 800;
+
+                    span {
+                        color: var(--primary);
+                    }
+                }
+            }
+        }
+
+        .text {
+            padding: 20px;
+
+            p {
+                margin: 20px 0;
+                text-align: center;
+            }
+        }
+
+        .action {
+            button {
+                height: 45px;
+                padding: 0 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--primary);
+                border-radius: 50px;
+                font-weight: 600;
+                cursor: pointer;
+
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+
+    @media (max-width:768px) {
+        display: block;
+        height: unset;
+        padding: 30px 0;
+
+        .left {
+            width: 100%;
+
+            .text-version {
+                font-size: 206px;
+            }
+        }
+
+        .right {
+            width: 100%;
+
+            .swipper {
+                width: 100%;
+
+                .item {
+                    text-align: center;
+
+                    h2 {
+                        font-size: 36px;
+                        font-weight: 700;
+
+                        span {
+                            color: var(--primary);
+                        }
+                    }
+
+                    h3 {
+                        font-size: 40px;
+                        font-weight: 800;
+
+                        span {
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
