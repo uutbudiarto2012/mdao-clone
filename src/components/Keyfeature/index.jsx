@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const Keyfeature = () => {
   return (
-    <div className="section-container px-5 sm:px-24">
+    <div className="section-container px-53 sm:px-24">
       <div className="section-header">
         <h2 className="title">KEY FEATURE</h2>
       </div>

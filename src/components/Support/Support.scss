@@ -1,0 +1,63 @@
+.support {
+    background: url('../../assets/ill.svg');
+    background-repeat: no-repeat;
+    .section-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        color: var(-dark);
+        .title {
+            font-size: 36px;
+            font-weight: 500;
+            position: relative;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                height: 6px;
+                left: 0;
+                right: 0;
+                top: -10px;
+                background: rgb(58, 70, 180);
+                background: linear-gradient(90deg, rgba(58, 70, 180, 1) 0%, rgba(253, 87, 29, 1) 54%, rgba(255, 204, 134, 1) 100%);
+                border-radius: 10px;
+            }
+        }
+    }
+}
+.suport-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF;
+    align-items: center;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    .text{
+        color: #010313;
+    }
+    .image-container{
+        width: 180px;
+        height: 180px;
+        animation:pound .9s infinite;
+        animation-duration: 8s;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    @keyframes pound {
+        0% { transform: scale(1.15); }
+        50% { transform: scale(1); }
+        100% { transform: scale(1.15); }
+    }
+
+    @media (max-width:768px) {
+        .image-container{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
